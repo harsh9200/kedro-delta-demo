@@ -32,7 +32,7 @@ training_data:
   save_args:
     sep: ","
     header: true
-    mode: insert
+    mode: overwrite
 
 testing_data:
   type: spark.SparkDataSet
