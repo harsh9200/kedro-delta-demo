@@ -23,7 +23,7 @@ example_iris_data:
     header: true
 
 training_data:
-  type: spark.SparkDataSet
+  type: kedro.contrib.io.pyspark.SparkDataSet
   filepath: dbfs:/root/projects/training_data
   file_format: "delta"
   save_args:
