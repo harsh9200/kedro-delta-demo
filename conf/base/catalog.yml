@@ -13,10 +13,14 @@
 # template. Please feel free to remove it once you remove the example pipeline.
 example_iris_data:
   type: spark.SparkDataSet
-  filepath: dbfs:/root/projects/iris
-  file_format: "delta"
+  filepath: dbfs:/root/projects/kedro-delta-demo/data/01_raw/iris.csv
+  file_format: csv
+  load_args:
+    header: true
+    inferSchema: true
   save_args:
-    mode: overwrite
+    sep: ","
+    header: true
 
 training_data:
   type: spark.SparkDataSet
