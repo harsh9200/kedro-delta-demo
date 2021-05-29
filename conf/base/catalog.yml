@@ -24,7 +24,7 @@ example_iris_data:
 
 transformed_data:
   type: spark.SparkDataSet
-  filepath: ${base_path_spark}/${env}/client_table
+  filepath: dbfs:/root/projects/client_table
   file_format: "delta"
   save_args:
     mode: overwrite
