@@ -26,7 +26,12 @@ training_data:
   type: spark.SparkDataSet
   filepath: dbfs:/root/projects/training_data
   file_format: "delta"
+  load_args:
+    header: true
+    inferSchema: true
   save_args:
+    sep: ","
+    header: true
     mode: overwrite
 
 testing_data:
