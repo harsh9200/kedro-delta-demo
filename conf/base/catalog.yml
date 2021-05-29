@@ -14,7 +14,7 @@
 example_iris_data:
   type: spark.SparkDataSet
   filepath: dbfs:/root/projects/kedro-delta-demo/data/01_raw/iris.csv
-  file_format: csv
+  file_format: "delta"
   load_args:
     header: true
     inferSchema: true
