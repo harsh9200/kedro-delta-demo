@@ -37,7 +37,7 @@ training_data:
 testing_data:
   type: spark.SparkDataSet
   filepath: dbfs:/root/projects/testing_data
-  # file_format: "delta"
+  file_format: "delta"
   save_args:
     mode: overwrite
 
