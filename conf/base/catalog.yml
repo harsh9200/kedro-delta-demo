@@ -22,9 +22,9 @@ example_iris_data:
     sep: ","
     header: true
 
-transformed_data:
+training_data:
   type: spark.SparkDataSet
-  filepath: dbfs:/root/projects/client_table
+  filepath: dbfs:/root/projects/training_data
   file_format: "delta"
   save_args:
     mode: overwrite
