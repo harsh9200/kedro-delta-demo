@@ -78,4 +78,5 @@ def split_data(
     training_data, testing_data = transformed_data.randomSplit(
         [example_train_data_ratio, example_test_data_ratio]
     )
+    training_data.write.format("delta").mode("append").saveAsTable("training_data")
     return [training_data, testing_data]
