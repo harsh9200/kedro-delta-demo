@@ -35,14 +35,14 @@ training_data:
     mode: overwrite
 
 testing_data:
-  type: spark.SparkDataaSet
+  type: spark.SparkDataSet
   filepath: dbfs:/root/projects/testing_data
   file_format: "delta"
   save_args:
     mode: overwrite
 
 example_predictions:
-  type: spark.SparkDataaSet
+  type: spark.SparkDataSet
   filepath: dbfs:/root/projects/example_predictions
   file_format: "delta"
   save_args:
